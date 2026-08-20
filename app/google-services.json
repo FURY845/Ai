@@ -1,5 +1,5 @@
 {
   "project_info": {"project_number": "0", "project_id": "dummy", "storage_bucket": "dummy.appspot.com"},
-  "client": [{"client_info": {"mobilesdk_app_id": "1:0:android:dummy", "android_client_info": {"package_name": "com.example.ai"}}, "oauth_client": [], "api_key": [{"current_key": "dummy"}], "services": {}}],
+  "client": [{"client_info": {"mobilesdk_app_id": "1:0:android:dummy", "android_client_info": {"package_name": "com.aistudio.thanaweya.offline"}}, "oauth_client": [], "api_key": [{"current_key": "dummy"}], "services": {}}],
   "configuration_version": "1"
 }
