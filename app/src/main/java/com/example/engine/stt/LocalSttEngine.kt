@@ -110,3 +110,12 @@ class LocalSttEngine(private val context: Context) {
         }
     }
 }
+
+    // Fix for AppRepository - live listening stub
+    fun startListening(onResult: (String) -> Unit): Result<Unit> {
+        return Result.failure(Exception("Live listening not implemented - use transcribeRecording"))
+    }
+
+    fun stopListening() {
+        // no-op
+    }
