@@ -1,0 +1,6 @@
+{
+  "name": "Ai الدحيح",
+  "description": "تطبيق الذكاء الاصطناعي والمساعد التعليمي الشامل لطلاب الثانوية العامة",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
