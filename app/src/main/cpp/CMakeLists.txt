@@ -21,6 +21,13 @@ set(LLAMA_BUILD_SERVER OFF CACHE BOOL "" FORCE)
 set(BUILD_SHARED_LIBS ON CACHE BOOL "" FORCE)
 
 set(LLAMA_SRC ${CMAKE_CURRENT_LIST_DIR}/../../../../third_party/llama.cpp)
+
+# Fix: ضيف الـ src عشان يلاقي models/models.h
+include_directories(${LLAMA_SRC}/src)
+include_directories(${LLAMA_SRC}/include)
+include_directories(${LLAMA_SRC}/ggml/include)
+include_directories(${LLAMA_SRC}/ggml/src)
+
 add_subdirectory(${LLAMA_SRC} ${CMAKE_CURRENT_BINARY_DIR}/llama-build)
 
 add_library(thanaweya_llama SHARED thanaweya_llama.cpp)
@@ -31,6 +38,7 @@ target_include_directories(thanaweya_llama PRIVATE
     ${LLAMA_SRC}/include
     ${LLAMA_SRC}/ggml/include
     ${LLAMA_SRC}/ggml/src
+    ${LLAMA_SRC}/src
 )
 
 target_link_libraries(thanaweya_llama

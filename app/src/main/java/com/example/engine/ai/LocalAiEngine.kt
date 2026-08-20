@@ -1,3 +1,4 @@
+import kotlinx.coroutines.flow.toList
 package com.example.engine.ai
 
 import com.example.engine.arabic.ArabicTextProcessor
